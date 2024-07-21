@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Popup Modal Box</title>
+    <link rel="stylesheet" href="css/Animated Popup Modal Box.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>This is the Popup web</h1>
+            <div class="btn">
+                <button id="open">Open popup</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="wrapper" id="pop-up">
+        <div class="pop-up">
+            <form action="">
+                <div class="heading">
+                    <h1>Form</h1>
+                    <hr style="width: 50px;">
+                </div>
+                <div class="form-control">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter Your Name">
+                </div>
+                <div class="form-control">
+                    <label for="Description">Description</label>
+                    <textarea name="Description" id="Description" placeholder="Enter Your Description"></textarea>
+                </div>
+                <div class="btn btn-submit">
+                    <button>Submit</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <script>
+        // let btn = document.getElementById("open");
+        // let popUp = document.getElementById("pop-up");
+        // btn.addEventListener("click", () => {
+        //     popUp.classList.add("show");
+        // });
+
+        const popup = document.querySelector("#pop-up");
+        const btn = document.querySelector("#open");
+
+        btn.addEventListener("click", () => {
+            popup.classList.add("show");
+        })
+
+    </script>
+</body>
+
+</html>

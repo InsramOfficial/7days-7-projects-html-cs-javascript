@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: red;
+}
+
+.container,
+.pop-up {
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    width: 300px;
+}
+
+.pop-up {
+    background-color: #FFFFFF;
+    padding: 40px;
+    border-radius: 10px;
+    top: 20%;
+    left: 30%;
+    width: 400px;
+    height: 400px;
+    animation: backwards;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.8);
+
+    display: none;
+}
+
+.show {
+    display: block;
+
+}
+
+.content h1 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.btn,
+button {
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.form-control,
+label {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.form-control,
+input,
+textarea {
+    margin-top: 10px;
+    width: 90%;
+    outline: none;
+    padding: 5px 10px;
+    color: black;
+
+}
+
+textarea {
+    width: 300px;
+    height: 100px;
+}
+
+.btn-submit {
+    justify-content: flex-end;
+}
+
+.btn-submit button:hover {
+    background-color: #dbd2d2fa;
+}
